@@ -1,0 +1,137 @@
+/*RESET CSS*/
+body,div,fieldset,input,img,a,a:hover,select,li ,ul, p, h1, h2, h3, h4, h5, h6, iframe
+{
+	margin:0;
+	padding:0;
+	border:0;
+	text-decoration:none;
+	outline:none;
+	list-style:none;
+	vertical-align:bottom;
+	white-space:normal;
+}
+
+/*GLOBAL*/
+h1, h2, h3, h4, h5, h6, p, a
+{
+    font-family: Arial, sans-serif;
+}
+p
+{
+    color: #666666;
+    font-size: 1.5em;
+}
+html 
+{
+    background-image: url("/css/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+body
+{
+    margin: 2%;
+    background-color: #ffffff;
+}
+#description
+{
+    padding-top: 2em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+#candidature:visited, #candidature
+{
+    color: #666666;
+}
+#candidature:hover, #mail:hover
+{
+    color: #ff7615;
+}
+/*MEMBRES-LIST*/
+#membre-title
+{
+    text-align: center;
+    color: #666666;
+
+}
+#membre-list
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}
+.membre
+{
+    margin: 2.5em;
+    color: #666666;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+.membre img {
+    display: block;
+}
+
+/*CANDIDATURE-PAGE*/
+#title-candidature
+{
+    color: #666666;
+    text-align: center;
+}
+.candidature-description
+{
+    padding: 1em;
+}
+#mail, #mail:visited
+{
+    color: #666666;
+}
+
+/*SLIDERS*/
+.slider
+{
+    overflow: hidden;
+}
+.slider #slide
+{
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    animation: slider 30s infinite;
+}
+.slider #slide img
+{
+    width: 33.33%;
+    float: left;
+}
+
+@keyframes slider
+{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    35% {
+        left: -100%;
+    }
+    60% {
+        left: -100%
+    }
+    75% {
+        left: -200%;
+    }
+    95% {
+        left: -200%;
+    }
+}
+.active-slider
+{
+    display: none;
+}
+
+
